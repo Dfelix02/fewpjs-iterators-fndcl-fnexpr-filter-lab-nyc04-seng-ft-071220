@@ -3,12 +3,11 @@ function findMatching(drivers,driver) {
 }
 
 function fuzzyMatch (drivers,driver) {
+  if (typeof person !== "undefined" 
   return drivers.filter(person => {
-    if (typeof person !== "undefined" || typeof driver !== "undefined"){
       if (person.name === driver || person.name[0] === driver[0]){
         return driver;
       }
-    }
   });
     
 }

@@ -9,5 +9,6 @@ function fuzzyMatch (drivers,driver) {
         return driver;
       }
     });
+  }
     
 }

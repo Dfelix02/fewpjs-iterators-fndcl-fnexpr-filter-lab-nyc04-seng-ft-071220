@@ -3,5 +3,5 @@ function findMatching(drivers,driver) {
 }
 
 function fuzzyMatch (drivers,driver) {
-  return drivers.filter(person => person.name === driver)
+  return drivers.filter(person => person.name === driver || person.name[0] === driver[0])
 }
